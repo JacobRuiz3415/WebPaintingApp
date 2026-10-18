@@ -1,5 +1,7 @@
+//context
 let c = document.getElementById("myCanvas");
 let ctx = c.getContext("2d");
+
 ctx.fillStyle = "#FF0000";
 ctx.fillRect(0,0,80,80);
 
@@ -17,3 +19,14 @@ ctx.strokeStyle='black';
 ctx.lineWidth = 3;
 ctx.stroke();
 
+function startDrawing(e){
+    isPainting = true;
+    ctx.beginPath();
+
+
+    draw(e);
+}
+
+function draw(e){
+    
+}
