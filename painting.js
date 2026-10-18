@@ -19,6 +19,11 @@ ctx.strokeStyle='black';
 ctx.lineWidth = 3;
 ctx.stroke();
 
+let isPainting = false;
+let currentMode = 'brush';
+let strokeColor = '#000000'
+let linewidth = 5;
+
 function startDrawing(e){
     isPainting = true;
     ctx.beginPath();
@@ -28,5 +33,5 @@ function startDrawing(e){
 }
 
 function draw(e){
-    
+
 }
