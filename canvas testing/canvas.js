@@ -18,3 +18,25 @@ ctx.lineTo(200, 100);
 ctx.strokeStyle='black';
 ctx.lineWidth = 3;
 ctx.stroke();
+
+//shape
+ctx.beginPath();
+ctx.moveTo(40,40);
+ctx.lineTo(120,40)
+ctx.lineTo(80,100);
+ctx.closePath();
+
+ctx.fillStyle = "#2F6Bff"
+ctx.fill();
+ctx.stroke();
+
+
+function drawShape(xPos, yPos){
+    ctx.beginPath();
+    ctx.moveTo(xPos,yPos);
+    ctx.lineTo(xPos+80,yPos)
+    ctx.lineTo(xPos+40,yPos + 60);
+    ctx.closePath();
+}
+
+drawShape(100,100);
