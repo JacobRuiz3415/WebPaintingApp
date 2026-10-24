@@ -31,12 +31,16 @@ ctx.fill();
 ctx.stroke();
 
 
-function drawShape(xPos, yPos){
+function drawShape(ctx, xPos, yPos, color){
     ctx.beginPath();
     ctx.moveTo(xPos,yPos);
     ctx.lineTo(xPos+80,yPos)
     ctx.lineTo(xPos+40,yPos + 60);
     ctx.closePath();
+
+    ctx.fillStyle = color;
+    ctx.fill();
+    ctx.stroke();
 }
 
-drawShape(100,100);
+drawShape(ctx, 100,100, "rgb(92, 211, 23)");
